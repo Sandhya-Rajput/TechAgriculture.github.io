@@ -4,7 +4,119 @@
     box-sizing: border-box;
     font-family: sans-serif,'Times New Roman', Times, serif;
     
-}.group-section .container .group-card{
-    padding: 30px 20px 0 ;
-    gap: 30px;
+}
+
+
+.nav-links ul li{
+ margin: auto;
+}
+.group-section{
+    margin: 75px 0;
+    width: 100%;
+    background: rgb(81, 165, 81);
+
+}
+.group-section.container{
+    width: 80%;
+    margin: auto;
+  
+
+}
+.group-section.container.row{
+    width: 60%;
+    margin: auto;
+}
+.group-section .container .row .title{
+    text-align: center;
+ 
+    margin-top: 50px;
+}
+.group-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #0a2908;
+}
+.group-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #0a0a0a;
+}
+.group-section .container .group-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.group-section .container .group-card .card{
+    width: 100%;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+.group-section .container .group-card .card:hover{
+    
+    background-origin: content-box;
+    background-color: rgb(137, 213, 149);
+
+    transition: 0.3s;
+}
+.group-section .container .group-card .card .image-section img{
+   position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+.group-section .container .group-card .card .content{
+    width: 100%;
+    text-align:center;
+}
+.group-section .container .group-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: rgb(0, 0, 0);
+}
+.group-section .container .group-card .card .content h4{
+    font-size: 17px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: rgb(12, 12, 12);
+}
+.group-section .container .group-card .card .content p{
+    font-size: 15px;
+    text-align: left;
+    
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: rgb(10, 10, 10);
+}
+@media screen and (max-width:900px){
+    
+    .group-section .container .group-card{
+      
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+}
+@media screen and (max-width:768px){
+    
+    .group-section .container .group-card{
+      
+        grid-template-columns:1fr;
+      
+    }
+}
+@media  screen and(max-width:479) {
+    .group-section .container .group-card{
+        min-width: 100%
+    }
+    
 }
